@@ -1,13 +1,9 @@
 def oxford_comma(array)
-  str = ""
-  array.each_with_index {|word, idx|
-    if idx == 0
-      str << "#{word}"
-    elsif idx == array.length - 1
-      str << " and #{word}"
-    else
-      str << " #{word},"
-    end
-  }
-  str
+  last = array.pop()
+  if array.length == 0
+    last
+  elsif array.length == 1
+    last = " and #{last}"
+  else
+    array.join(", ") + ", and #{last}"
 end
