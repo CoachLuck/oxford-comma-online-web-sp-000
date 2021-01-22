@@ -3,7 +3,7 @@ def oxford_comma(array)
   if array.length == 0
     last
   elsif array.length == 1
-    last = " and #{last}"
+    array[0] " and #{last}"
   else
     array.join(", ") + ", and #{last}"
   end
