@@ -1,7 +1,7 @@
 def oxford_comma(array)
   str = ""
   array.each_with_index {|word, idx|
-    if array.length == 1
+    if array.length == 1 || array.length == 2
       str << "#{word}"
     elsif idx == array.length - 1
       str << "and #{word}"
