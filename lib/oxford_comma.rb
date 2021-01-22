@@ -4,7 +4,7 @@ def oxford_comma(array)
     if idx == 0
       str << "#{word}"
     elsif idx == array.length - 1
-      str << "and #{word}"
+      str << " and #{word}"
     else
       str << "#{word}, "
     end
