@@ -7,4 +7,5 @@ def oxford_comma(array)
       str << "#{word}, "
     end
   }
+  str
 end
